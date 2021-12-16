@@ -4,9 +4,9 @@
   --text-primary: #fff;
   --text-accent: #fca311;
 
-  --ff-primary: 'Roboto', sans-serif;;
-  --ff-accent: 'Indie Flower', cursive;;
-}
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-accent: 'Playfair Display', serif;
+  }
 
 * {
   margin: 0;

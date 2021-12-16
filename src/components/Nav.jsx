@@ -1,15 +1,43 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { device } from '../device';
+
 import logo from '../assets/logo.png'
 
-const NavDiv = styled.div`
+const ParentDiv = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-contents: flex-start;
-  align-items: center;
+  flex-direct: row;
 
   background: var(--bg-primary);
+
+  width: 100%;
+`;
+
+const ChildDivL = styled.div`
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 75%;
+
+  @media ${device.tablet} {
+    display: flex;
+  }
+`;
+
+const ChildDivR = styled.div`
+  display: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 25%;
+
+  @media ${device.tablet} {
+    display: flex;
+  }
 `;
 
 const NavItem = styled.a`
@@ -18,16 +46,27 @@ const NavItem = styled.a`
   font-size: 25px;
   font-family: var(--ff-primary);
   padding: 1rem 50px;
+
+  display: flex;
+  align-items: center;
 `;
 
 const Nav = () => {
   return (
-    <NavDiv>
-      <NavItem href="/"><img src={logo} alt="nathan mclaren web design logo" width="50px"></img></NavItem>
-      <NavItem href="/">HOME</NavItem>
-      <NavItem href="/aboutme">ABOUT ME</NavItem>
-      <NavItem href="/contactinfo">CONTACT INFO</NavItem>
-    </NavDiv>
+    <ParentDiv>
+      <ChildDivL>
+        <NavItem href="/"><img src={logo} alt="nathan mclaren web design logo" width="50px" /></NavItem>
+        <NavItem href="/">HOME</NavItem>
+        <NavItem href="/aboutme">ABOUT ME</NavItem>
+        <NavItem href="/contactinfo">CONTACT INFO</NavItem>
+      </ChildDivL>
+      <ChildDivR>
+        <NavItem href="tel:+12042459118">(204) 245-9118</NavItem>
+      </ChildDivR>
+    </ParentDiv>
+
+
+
   )
 }
 
