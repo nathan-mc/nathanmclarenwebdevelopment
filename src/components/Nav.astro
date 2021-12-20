@@ -1,0 +1,51 @@
+<nav>
+  <div class="logo">
+    <img src="../../../assets/logo.png" alt="">
+  </div>
+  <div class="links">
+    <a href="/">HOME</a>
+    <a href="/aboutme">ABOUT ME</a>
+    <a href="/contactinfo">CONTACT INFO</a>
+  </div>
+</nav>
+
+<style>
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60%;
+}
+
+.logo img {
+  width: 2rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+
+  padding: 0 1rem;
+}
+
+.links a:hover {
+  color: orange;
+}
+</style>

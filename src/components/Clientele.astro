@@ -1,0 +1,43 @@
+---
+import wallaceseeds from '../../public/assets/projects/wallaceseeds.png';
+import leppsff from '../../public/assets/projects/leppsff.webp';
+import moundservices from '../../public/assets/projects/moundservices.png';
+import pmgolfcourse from '../../public/assets/projects/golfcourse.png'
+---
+
+<div class="container">
+  <h1>Clientele</h1>
+  <div class="logos">
+    <a href="https://www.wallaceseeds.ca"><img src={wallaceseeds} alt="wallace seeds logo"></a>
+    <a href="https://pilotmoundgolfcourse.ca/"><img src={pmgolfcourse} alt="pilot mound golf course logo"></a>
+    <a href="https://leppsfamilyfarm.netlify.app/"><img src={leppsff} alt="lepps family farm logo"></a>
+    <a href="https://moundservices.com/"><img src={moundservices} alt="lepps family farm logo"></a>
+
+  </div>
+</div>
+
+<style>
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  border-radius: 5rem;
+
+  padding: 2rem;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos img {
+  max-width: 100%;
+  height: 5rem;
+  padding: 0 1rem
+}
+</style>

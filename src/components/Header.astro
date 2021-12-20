@@ -1,0 +1,58 @@
+---
+// Image Imports
+import image from '../../public/assets/header.png'
+---
+
+<div class="row">
+  <div class="column-1">
+    <h1>Let’s Build Something Amazing Together</h1>
+    <p>I work closely with my clients to build websites that they are proud to show off.</p>
+  </div>
+  <div class="column-2">
+    <img src={image} alt="person sitting behind laptop">
+  </div>
+</div>
+
+<style>
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.column-1 h1 {
+  background-color: #4158D0;
+  background-image: linear-gradient(90deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+
+  padding-bottom: 1rem;
+}
+
+.column-1 p {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.04em;
+}
+
+.column-2 {
+  width: 50%;
+}
+
+.column-2 img {
+  width: 100%;
+}
+</style>
