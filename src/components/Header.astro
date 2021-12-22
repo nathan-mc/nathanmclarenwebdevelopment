@@ -17,6 +17,8 @@ import image from '../assets/header.png'
 .row {
   display: flex;
   flex-direction: row;
+  gap: 2rem;
+  padding-bottom: 2rem;
 }
 
 .column-1 {
@@ -54,5 +56,22 @@ import image from '../assets/header.png'
 
 .column-2 img {
   width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .column-1, .column-2 {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .column-2 img {
+    width: 66%;
+  }
 }
 </style>
